@@ -19,6 +19,18 @@ func TestTraverse(t *testing.T) {
 			expected: []int{1},
 		},
 		{
+			inserts:  []int{1, 1},
+			expected: []int{1, 1},
+		},
+		{
+			inserts:  []int{1, 2},
+			expected: []int{1, 2},
+		},
+		{
+			inserts:  []int{2, 1},
+			expected: []int{1, 2},
+		},
+		{
 			inserts:  []int{1, 2, 3, 4, 5, 6, 7},
 			expected: []int{1, 2, 3, 4, 5, 6, 7},
 		},
